@@ -161,15 +161,12 @@ body {
 header.masthead {
   text-align: center;
   color: white;
-  background-color: black;
+  background-color: #870000;
   background-image: url("../img/header-bg.jpg");
-  background-repeat: no-repeat;
+  background-repeat: repeat;
+  background-size: 15%;
   background-attachment: scroll;
-  background-position: center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover; }
+  background-position: center center; }
   header.masthead .intro-text {
     padding-top: 150px;
     padding-bottom: 100px; }
@@ -185,6 +182,11 @@ header.masthead {
       line-height: 50px;
       margin-bottom: 25px;
       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
+
+#rondaLogo {
+  width: 45%;
+  height: 45%;
+}
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
