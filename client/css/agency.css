@@ -12,12 +12,12 @@ p {
   line-height: 1.75; }
 
 a {
-  color: #fed136; }
+  color: #780000; }
   a.active, a:active, a:focus, a:hover {
-    color: #fec503; }
+    color: #fe0202; }
 
 .text-primary {
-  color: #fed136 !important; }
+  color: #780000 !important; }
 
 h1,
 h2,
@@ -52,27 +52,26 @@ section {
 
 .btn-primary {
   color: white;
-  border-color: #fed136;
-  background-color: #fed136; }
+  border-color: #780000;
+  background-color: #780000; }
   .btn-primary.focus, .btn-primary:focus {
     color: white;
-    border-color: #b48b01;
-    background-color: #fec503; }
+    background-color: #fe0202; }
   .btn-primary:hover {
     color: white;
-    border-color: #f6bf01;
-    background-color: #fec503; }
+    border-color: #780000;
+    background-color: rgba(242, 53, 53, 0.9); }
   .btn-primary.active, .btn-primary:active,
   .open > .btn-primary.dropdown-toggle {
     color: white;
-    border-color: #f6bf01;
-    background-color: #fec503; }
+    border-color: #780000;
+    background-color: #fe0202; }
     .btn-primary.active.focus, .btn-primary.active:focus, .btn-primary.active:hover, .btn-primary:active.focus, .btn-primary:active:focus, .btn-primary:active:hover,
     .open > .btn-primary.dropdown-toggle.focus,
     .open > .btn-primary.dropdown-toggle:focus,
     .open > .btn-primary.dropdown-toggle:hover {
       color: white;
-      border-color: #b48b01;
+      border-color: #780000;
       background-color: #dcab01; }
   .btn-primary.active, .btn-primary:active,
   .open > .btn-primary.dropdown-toggle {
@@ -81,10 +80,10 @@ section {
   fieldset[disabled] .btn-primary.focus,
   fieldset[disabled] .btn-primary:focus,
   fieldset[disabled] .btn-primary:hover {
-    border-color: #fed136;
-    background-color: #fed136; }
+    border-color: #fe0202;
+    background-color: #fe0202; }
   .btn-primary .badge {
-    color: #fed136;
+    color: #fe0202;
     background-color: white; }
 
 .btn-xl {
@@ -92,11 +91,11 @@ section {
   padding: 20px 40px; }
 
 ::-moz-selection {
-  background: #fed136;
+  background: #fe0202;
   text-shadow: none; }
 
 ::selection {
-  background: #fed136;
+  background: #fe0202;
   text-shadow: none; }
 
 img::selection {
@@ -106,24 +105,24 @@ img::-moz-selection {
   background: transparent; }
 
 body {
-  -webkit-tap-highlight-color: #fed136; }
+  -webkit-tap-highlight-color: #fe0202; }
 
 #mainNav {
-  background-color: #212529; }
+  background-color: #780000; }
   #mainNav .navbar-toggler {
     font-size: 12px;
-    right: 0;
     padding: 13px;
     text-transform: uppercase;
     color: white;
     border: 0;
-    background-color: #fed136;
+    background-color: #dd2e2e;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   #mainNav .navbar-brand {
-    color: #fed136;
-    font-family: 'Kaushan Script', 'Helvetica Neue', Helvetica, Arial, cursive; }
+    color: #ffffff;
+    padding: 0;
+    font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     #mainNav .navbar-brand.active, #mainNav .navbar-brand:active, #mainNav .navbar-brand:focus, #mainNav .navbar-brand:hover {
-      color: #fec503; }
+      color: rgba(242, 53, 53, 0.9); }
   #mainNav .navbar-nav .nav-item .nav-link {
     font-size: 90%;
     font-weight: 400;
@@ -132,7 +131,7 @@ body {
     color: white;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
-      color: #fed136; }
+      color: rgba(242, 53, 53, 0.9); }
 
 @media (min-width: 992px) {
   #mainNav {
@@ -162,11 +161,10 @@ header.masthead {
   text-align: center;
   color: white;
   background-color: #870000;
-  background-image: url("../img/header-bg.jpg");
+  background-image: url("../img/dark-brick-wall.png");
   background-repeat: repeat;
-  background-size: 15%;
-  background-attachment: scroll;
-  background-position: center center; }
+  background-size: 10%;
+  background-attachment: scroll; }
   header.masthead .intro-text {
     padding-top: 150px;
     padding-bottom: 100px; }
@@ -174,7 +172,8 @@ header.masthead {
       font-size: 22px;
       font-style: italic;
       line-height: 22px;
-      margin-bottom: 25px;
+      margin-bottom: 0px;
+      padding-top: 50px;
       font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
     header.masthead .intro-text .intro-heading {
       font-size: 50px;
@@ -184,14 +183,16 @@ header.masthead {
       font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
 
 #rondaLogo {
+  margin-top: 0;
   width: 45%;
   height: 45%;
+
 }
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
-    padding-top: 300px;
-    padding-bottom: 200px; }
+    padding-top: 150px;
+    padding-bottom: 100px; }
     header.masthead .intro-text .intro-lead-in {
       font-size: 40px;
       font-style: italic;
@@ -229,7 +230,7 @@ header.masthead {
       -moz-transition: all ease 0.5s;
       transition: all ease 0.5s;
       opacity: 0;
-      background: rgba(254, 209, 54, 0.9); }
+      background: rgba(242, 53, 53, 0.9); }
       #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
         opacity: 1; }
       #portfolio .portfolio-item .portfolio-link .portfolio-hover .portfolio-hover-content {
@@ -385,7 +386,7 @@ header.masthead {
       color: white;
       border: 7px solid #e9ecef;
       border-radius: 100%;
-      background-color: #fed136; }
+      background-color: #780000; }
       .timeline > li .timeline-image h4 {
         font-size: 10px;
         line-height: 14px;
@@ -501,7 +502,7 @@ section#contact {
     section#contact .form-group textarea.form-control {
       height: 248px; }
   section#contact .form-control:focus {
-    border-color: #fed136;
+    border-color: #fe0202;
     box-shadow: none; }
   section#contact ::-webkit-input-placeholder {
     font-weight: 700;
@@ -553,4 +554,4 @@ ul.social-buttons {
     outline: none;
     background-color: #212529; }
     ul.social-buttons li a:active, ul.social-buttons li a:focus, ul.social-buttons li a:hover {
-      background-color: #fed136; }
+      background-color: #fe0202; }
