@@ -16,6 +16,7 @@
   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="client/css/agency.min.css" rel="stylesheet">
@@ -26,7 +27,7 @@
 
   <!-- Navigation -->
   <nav class="navbar navbar-expand-lg fixed-top" id="mainNav"
-  style="background:linear-gradient(to bottom, #780000 85%, #c60505 99%);">
+  style="background:linear-gradient(to bottom, #000000 85%, #000000 99%);">
     <div class="container">
       <a class="navbar-brand" href="#page-top"><img style="height: 100%;
         width:35%;" src="img/rondaLogo.png" alt="Ronda Alarmes Logo"></a>
@@ -44,7 +45,7 @@
             <a class="nav-link js-scroll-trigger" href="#portfolio">Publicações</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            <a class="dropdown-menu" href="#about">About</a>
           </li>
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#team">Team</a>
@@ -61,11 +62,10 @@
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
-        <div class="intro-heading">
-          <img style="float: left; width: 10%" src="img/camera.png" alt="Camera">
-          <img style="padding-top: 115px; width: 30%" src="img/rondaLogo.png" alt="Ronda Logo">
-          <img style="float: right; width: 10%" src="img/camera1.png" alt="Camera">
-          <br>Segurança Eletrônica</div>
+        <div class="intro-heading" style="color: #ff0000; text-shadow: 6px 6px black;">
+          <img style="padding-top: 40px; width: 25%;" src="img/RONDA.jpg" alt="Ronda Logo">
+          <br>Segurança Eletrônica
+        </div>
       </div>
     </div>
   </header>
@@ -111,7 +111,7 @@
           <span class="fa-stack fa-4x">
             <img style="border-radius: 50%; width:90%; height:90%;" src="img/moni.jpg" alt="Portaria">
           </span>
-          <h2 class="service-heading">Portaria Virtual ou Remota (Moni)</h2>
+          <h2 class="service-heading">Portaria Virtual ou Remota</h2>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
@@ -179,14 +179,6 @@
       </div>
     </div>
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h1 style="font-weight: 400; margin-top: 60px;"
-          class="section-subheading"><b>Planos de monitoramento a partir de 120,00 R$</b></h1>
-        </div>
-      </div>
-    </div>
   </section>
 
   <!-- Portfolio Grid -->
@@ -247,17 +239,17 @@
       <nav aria-label="Page navigation">
         <ul class="pagination navbar-right">
           <li>
-            <a style="color: #780000" href="#" aria-label="Previous">
+            <a style="color: #e83e3e" href="#" aria-label="Previous">
               <span aria-hidden="true">&laquo;</span>
             </a>
           </li>
-          <li><a style="color: #780000" href="#">1</a></li>
-          <li><a style="color: #780000" href="#">2</a></li>
-          <li><a style="color: #780000" href="#">3</a></li>
-          <li><a style="color: #780000" href="#">4</a></li>
-          <li><a style="color: #780000" href="#">5</a></li>
+          <li><a style="color: #e83e3e" href="#">1</a></li>
+          <li><a style="color: #e83e3e" href="#">2</a></li>
+          <li><a style="color: #e83e3e" href="#">3</a></li>
+          <li><a style="color: #e83e3e" href="#">4</a></li>
+          <li><a style="color: #e83e3e" href="#">5</a></li>
           <li>
-            <a style="color: #780000" href="#" aria-label="Next">
+            <a style="color: #e83e3e" href="#" aria-label="Next">
               <span aria-hidden="true">&raquo;</span>
             </a>
           </li>
@@ -267,6 +259,11 @@
   </section>
 
   <!-- About
+
+  Fulltime
+  Câmera HD Intelbras 3140
+  Controle de acesso trocar por um alarme
+
   <section id="about">
     <div class="container">
       <div class="row">
@@ -448,7 +445,7 @@
       <div class="row">
         <div class="col-md-3 col-sm-6">
           <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/crea.png" alt="">
+            <img class="img-fluid d-block mx-auto" style="width: 70%" src="img/logos/sec.jpeg" alt="">
           </a>
         </div>
         <div class="col-md-3 col-sm-6">
@@ -463,7 +460,7 @@
         </div>
         <div class="col-md-3 col-sm-6">
           <a href="#">
-            <img class="img-fluid d-block mx-auto" src="img/logos/sec.jpeg" alt="">
+            <img style="width: 65%" class="img-fluid d-block mx-auto" src="img/logos/crea2.jpg" alt="">
           </a>
         </div>
       </div>
@@ -485,15 +482,15 @@
             <div class="row">
               <div class="col-md-6">
                 <div class="form-group">
-                  <input class="form-control" id="name" type="text" placeholder="Your Name *" required data-validation-required-message="Please enter your name.">
+                  <input class="form-control" id="name" type="text" placeholder="Nome *" required data-validation-required-message="Please enter your name.">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" id="email" type="email" placeholder="Your Email *" required data-validation-required-message="Please enter your email address.">
+                  <input class="form-control" id="email" type="email" placeholder="E-mail *" required data-validation-required-message="Please enter your email address.">
                   <p class="help-block text-danger"></p>
                 </div>
                 <div class="form-group">
-                  <input class="form-control" id="phone" type="tel" placeholder="Your Phone *" required data-validation-required-message="Please enter your phone number.">
+                  <input class="form-control" id="phone" type="tel" placeholder="Telefone *" required data-validation-required-message="Please enter your phone number.">
                   <p class="help-block text-danger"></p>
                 </div>
               </div>
@@ -520,7 +517,7 @@
     <div class="container">
       <div class="row">
         <div class="col-md-4">
-          <span class="copyright">Copyright &copy; Your Website 2017</span>
+          <span class="copyright">Copyright &copy; Ubiki 2017</span>
         </div>
         <div class="col-md-4">
           <ul class="list-inline social-buttons">
@@ -538,16 +535,6 @@
               <a href="#">
                 <i class="fa fa-linkedin"></i>
               </a>
-            </li>
-          </ul>
-        </div>
-        <div class="col-md-4">
-          <ul class="list-inline quicklinks">
-            <li class="list-inline-item">
-              <a href="#">Privacy Policy</a>
-            </li>
-            <li class="list-inline-item">
-              <a href="#">Terms of Use</a>
             </li>
           </ul>
         </div>

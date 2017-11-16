@@ -115,7 +115,7 @@ body {
     text-transform: uppercase;
     color: white;
     border: 0;
-    background-color: #fe0202;
+    background-color: #000000;
     font-family: 'Montserrat', 'Helvetica Neue', Helvetica, Arial, sans-serif; }
   #mainNav .navbar-brand {
     color: #ffffff;
@@ -160,10 +160,10 @@ body {
 header.masthead {
   text-align: center;
   color: white;
-  background-color: #870000;
-  background-image: url("../img/dark-brick-wall.png");
-  background-repeat: repeat;
-  background-size: 10%;
+  background-color: #000000;
+  background-image: url("img/cameraHD.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   background-attachment: scroll; }
   header.masthead .intro-text {
     padding-top: 100px;
@@ -187,8 +187,8 @@ header.masthead {
 
 #rondaLogo {
   margin-top: 0;
-  width: 45%;
-  height: 45%; }
+  width: 60%;
+  height: 60%; }
 
 @media (min-width: 768px) {
   header.masthead .intro-text {
