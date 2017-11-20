@@ -17,6 +17,7 @@
   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
   <link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="client/css/agency.min.css" rel="stylesheet">
@@ -26,45 +27,50 @@
 <body id="page-top">
 
   <!-- Navigation -->
-  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav"
-  style="background:linear-gradient(to bottom, #000000 85%, #000000 99%);">
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="#page-top"><img style="height: 100%;
-        width:35%;" src="img/rondaLogo.png" alt="Ronda Alarmes Logo"></a>
-      <button class="navbar-toggler navbar-toggler-right" type="button"
-      data-toggle="collapse" data-target="#navbarResponsive"
-      aria-controls="navbarResponsive" aria-expanded="false" a
-      ria-label="Toggle navigation">Menu<i class="fa fa-bars"></i>
+      <a class="navbar-brand js-scroll-trigger" href="#page-top"><img style="height: 90%; float: left;" src="img/rondaLogo.png" alt="Ronda Logo"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse"
+      data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+      aria-label="Toggle navigation">
+        Menu
+        <i class="fa fa-bars"></i>
       </button>
-      <div class="collapse navbar-collapse" id="navbarResponsive">
+      <div class="collapse navbar-collapse"  id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ml-auto">
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#services">Serviços</a>
+            <a class="nav-link js-scroll-trigger" href="#services">Serviços </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#portfolio">Publicações</a>
+            <a class="nav-link js-scroll-trigger" href="#portfolio">Soluções </a>
           </li>
           <li class="nav-item">
-            <a class="dropdown-menu" href="#about">About</a>
+            <div class="dropdown">
+              <button class="dropbtn">Boletos/WebAlarmes</button>
+              <div class="dropdown-content">
+                <a href="http://201.22.148.197:9596/portalservice">Boletos</a>
+                <a href="http://www.webalarme.com.br">WebAlarmes</a>
+              </div>
+            </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#team">Team</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link js-scroll-trigger" href="#contact">Contato</a>
+            <a class="nav-link js-scroll-trigger" href="#contact">Contato </a>
           </li>
         </ul>
       </div>
     </div>
   </nav>
 
+
   <!-- Header -->
   <header class="masthead">
     <div class="container">
       <div class="intro-text">
-        <div class="intro-heading" style="color: #ff0000; text-shadow: 6px 6px black;">
-          <img style="padding-top: 40px; width: 25%;" src="img/RONDA.png" alt="Ronda Logo">
-          <br>Segurança Eletrônica
+        <div class="intro-heading" style="color: #f80000; text-shadow: 2px 0 0 #000, -2px 0 0 #000,
+        0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000,
+        -1px 1px 0 #000; text-transform: uppercase; font-size: 42px;">
+          <img style="padding-top: 0px; width: 25%;" src="img/RONDA.png" alt="Ronda Logo">
+          <br>Segurança<br>Eletrônica
         </div>
       </div>
     </div>
@@ -85,19 +91,19 @@
       <div class="row text-center">
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-            <img style="border-radius: 50%; width:90%; height:90%;" src="img/concertina.jpg" alt="Concertina">
+            <img style="border-radius: 50%; width:90%; height:90%; object-fit: contain;" src="img/concertina.jpg" alt="Concertina">
           </span>
           <h2 class="service-heading">Concertinas</h2>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-            <img style="border-radius: 50%; width:90%; height:90%;" src="img/cerca.jpg" alt="Cerca">
+            <img style="border-radius: 50%; width:90%; height:90%; object-fit: contain;" src="img/cerca.jpg" alt="Cerca">
           </span>
           <h2 class="service-heading">Cercas Elétricas</h2>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-            <img style="border-radius: 50%; width:90%; height:90%;" src="img/fulltime.png" alt="Rastreamento">
+            <img style="border-radius: 50%; width:90%; height:90%; object-fit: contain;" src="img/rastreamento.jpg" alt="Rastreamento">
           </span>
           <h2 class="service-heading">Rastreamento Veícular (Fulltime)</h2>
         </div>
@@ -109,19 +115,19 @@
       <div class="row text-center">
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-            <img style="border-radius: 50%; width:90%; height:90%;" src="img/moni.jpg" alt="Portaria">
+            <img style="border-radius: 50%; width:90%; height:90%; object-fit: contain;" src="img/moni.jpg" alt="Portaria">
           </span>
           <h2 class="service-heading">Portaria Virtual ou Remota</h2>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-            <img style="border-radius: 50%; width:90%; height:90%;" src="img/seguranca.jpg" alt="Seguranca">
+            <img style="border-radius: 50%; width:90%; height:90%; object-fit: contain;" src="img/seguranca.jpg" alt="Seguranca">
           </span>
           <h2 class="service-heading">Segurança Pública</h2>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-            <img style="border-radius: 50%; width:90%; height:90%;" src="img/alarme.jpg" alt="Alarme">
+            <img style="border-radius: 50%; width:90%; height:90%; object-fit: contain;" src="img/alarmeMonitorado.png" alt="Alarme">
           </span>
           <h2 class="service-heading">Alarme Monitorado 24 Horas</h2>
         </div>
@@ -133,19 +139,19 @@
       <div class="row text-center">
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-            <img style="border-radius: 50%; width:90%; height:90%;" src="img/analogica.jpg" alt="Alarme">
+            <img style="border-radius: 50%; width:90%; height:90%; object-fit: contain;" src="img/analogica.jpg" alt="Alarme">
           </span>
           <h2 class="service-heading">Cameras Analógicas em HD e IP</h2>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-            <img style="border-radius: 50%; width:90%; height:90%;" src="img/iphone.jpg" alt="Alarme">
+            <img style="border-radius: 50%; width:90%; height:90%; object-fit: contain;" src="img/iphone.jpg" alt="Alarme">
           </span>
           <h2 class="service-heading">Imagem em Tempo Real</h2>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-            <img style="border-radius: 50%; width:90%; height:90%;" src="img/internet.jpg" alt="Alarme">
+            <img style="border-radius: 50%; width:90%; height:90%; object-fit: contain;" src="img/internet.jpg" alt="Alarme">
           </span>
           <h2 class="service-heading">Relatório de Abertura e Fechamento</h2>
         </div>
@@ -157,24 +163,21 @@
       <div class="row text-center">
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+            <img style="border-radius: 50%; width:90%; height:90%; object-fit: contain;" src="img/atendimento.jpg" alt="Alarme">
           </span>
           <h2 class="service-heading">Apoio Técnico</h2>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa fa-car fa-stack-1x fa-inverse"></i>
+            <img style="border-radius: 50%; width:90%; height:90%; object-fit: contain;" src="img/viaturas.jpg" alt="Alarme">
           </span>
           <h2 class="service-heading">Viaturas de Pronta Resposta</h2>
         </div>
         <div class="col-md-4">
           <span class="fa-stack fa-4x">
-            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-            <i class="fa fa-video-camera fa-stack-1x fa-inverse"></i>
+            <img style="border-radius: 50%; width:90%; height:90%; object-fit: contain;" src="img/painel.jpg" alt="Alarme">
           </span>
-          <h2 class="service-heading">Monitoramento de Imagem via Rádio e Vídeo</h2>
+          <h2 class="service-heading">Monitoramente de Imagem via Rádio e Vídeo</h2>
         </div>
       </div>
     </div>
@@ -232,7 +235,8 @@
           </a>
           <div class="portfolio-caption">
             <h4>Residências e empresas</h4>
-            <p class="text-muted">Soluções para segurança do seu lar e da sua empresa, protegendo seus bens e sua família com eficácia.</p>
+            <p class="text-muted">Soluções para segurança do seu lar e da sua empresa, protegendo seus
+              bens e sua família com eficácia.</p>
           </div>
         </div>
       </div>
@@ -257,186 +261,6 @@
       </nav>
     </div>
   </section>
-
-  <!-- About
-
-  Fulltime
-  Câmera HD Intelbras 3140
-  Controle de acesso trocar por um alarme
-
-  <section id="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">About</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-12">
-          <ul class="timeline">
-            <li>
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>2009-2011</h4>
-                  <h4 class="subheading">Our Humble Beginnings</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>March 2011</h4>
-                  <h4 class="subheading">An Agency is Born</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                </div>
-              </div>
-            </li>
-            <li>
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>December 2012</h4>
-                  <h4 class="subheading">Transition to Full Service</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <img class="rounded-circle img-fluid" src="img/about/4.jpg" alt="">
-              </div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4>July 2014</h4>
-                  <h4 class="subheading">Phase Two Expansion</h4>
-                </div>
-                <div class="timeline-body">
-                  <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut voluptatum eius sapiente, totam reiciendis temporibus qui quibusdam, recusandae sit vero unde, sed, incidunt et ea quo dolore laudantium consectetur!</p>
-                </div>
-              </div>
-            </li>
-            <li class="timeline-inverted">
-              <div class="timeline-image">
-                <h4>Be Part
-                  <br>Of Our
-                  <br>Story!</h4>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-  -->
-
-  <!-- Team
-  <section class="bg-light" id="team">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12 text-center">
-          <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-          <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/1.jpg" alt="">
-            <h4>Kay Garland</h4>
-            <p class="text-muted">Lead Designer</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-facebook"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/2.jpg" alt="">
-            <h4>Larry Parker</h4>
-            <p class="text-muted">Lead Marketer</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-facebook"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-        <div class="col-sm-4">
-          <div class="team-member">
-            <img class="mx-auto rounded-circle" src="img/team/3.jpg" alt="">
-            <h4>Diana Pertersen</h4>
-            <p class="text-muted">Lead Developer</p>
-            <ul class="list-inline social-buttons">
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-twitter"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-facebook"></i>
-                </a>
-              </li>
-              <li class="list-inline-item">
-                <a href="#">
-                  <i class="fa fa-linkedin"></i>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-lg-8 mx-auto text-center">
-          <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  -->
 
   <!-- Clients -->
   <h1 class="text-center">Parceiros e Certificados</h1>
@@ -514,16 +338,16 @@
 
   <!-- Footer -->
   <footer>
-    <div class="container">
+    <div class="container" style="font-weight: 900;">
       <div class="row">
         <div class="col-md-4">
-          <span class="copyright">Copyright &copy; Ubiki 2017</span>
+          <span class="copyright">QNF 24, Lote 36 - Taguatinga<br>Brasília - DF<br>CEP: 72125-740</span>
         </div>
         <div class="col-md-4">
           <ul class="list-inline social-buttons">
             <li class="list-inline-item">
               <a href="#">
-                <i class="fa fa-twitter"></i>
+                <i class="fa fa-instagram"></i>
               </a>
             </li>
             <li class="list-inline-item">
@@ -537,6 +361,9 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="col-md-4">
+          <span class="copyright">(61) 3034-3598<br>comercial@rondaalarmes.com.br</span>
         </div>
       </div>
     </div>
@@ -558,7 +385,7 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Soluções Inteligentes para Condomínios</h2>
+                <h2 class="text-uppercase">Soluções Inteligentes<br>para Condomínios</h2>
                 <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
                 <img class="img-fluid d-block mx-auto" src="img/condominio.jpg" alt="">
                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
@@ -591,7 +418,7 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Soluções para Veículos</h2>
+                <h2 class="text-uppercase">Soluções para<br>Veículos</h2>
                 <p class="item-intro text-muted">Soluções ideais para rastrear veículo particular ou frotas de uso corporativo.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/veiculo.jpg" alt="">
                 <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
@@ -625,7 +452,7 @@
             <div class="col-lg-8 mx-auto">
               <div class="modal-body">
                 <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Residências e Empresas</h2>
+                <h2 class="text-uppercase">Residências e<br>Empresas</h2>
                 <p class="item-intro text-muted">Sua empresa ou residência com segurança, oferecemos as melhores soluções para a proteção de seu patrimônio e sua família.</p>
                 <img class="img-fluid d-block mx-auto" src="img/portfolio/residencia.jpg" alt="">
                 <p>
@@ -635,108 +462,6 @@
                 <ul class="list-inline">
                   <li>Date: January 2017</li>
                   <li>Category: Identity</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fa fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 4 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/04-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Lines</li>
-                  <li>Category: Branding</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fa fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 5 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/05-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Southwest</li>
-                  <li>Category: Website Design</li>
-                </ul>
-                <button class="btn btn-primary" data-dismiss="modal" type="button">
-                  <i class="fa fa-times"></i>
-                  Close Project</button>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal 6 -->
-  <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="close-modal" data-dismiss="modal">
-          <div class="lr">
-            <div class="rl"></div>
-          </div>
-        </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-8 mx-auto">
-              <div class="modal-body">
-                <!-- Project Details Go Here -->
-                <h2 class="text-uppercase">Project Name</h2>
-                <p class="item-intro text-muted">Lorem ipsum dolor sit amet consectetur.</p>
-                <img class="img-fluid d-block mx-auto" src="img/portfolio/06-full.jpg" alt="">
-                <p>Use this area to describe your project. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est blanditiis dolorem culpa incidunt minus dignissimos deserunt repellat aperiam quasi sunt officia expedita beatae cupiditate, maiores repudiandae, nostrum, reiciendis facere nemo!</p>
-                <ul class="list-inline">
-                  <li>Date: January 2017</li>
-                  <li>Client: Window</li>
-                  <li>Category: Photography</li>
                 </ul>
                 <button class="btn btn-primary" data-dismiss="modal" type="button">
                   <i class="fa fa-times"></i>
@@ -762,5 +487,6 @@
 
   <!-- Custom scripts for this template -->
   <script src="client/js/agency.min.js"></script>
+  <script src="client/js/script.js"></script>
 
 </body>
