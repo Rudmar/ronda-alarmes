@@ -5,3 +5,6 @@ Router.route('solucoes_Inteligentes', function () {
 Router.route('exemplo', function () {
   this.render('exemplo_postagem');
 });
+Router.route('testeddssdf', function () {
+  this.render('teste');
+});
