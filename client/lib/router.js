@@ -7,3 +7,6 @@ Router.route('exemplo', function () {
   // Aqui vai o nome do template do site, nome dado no parametro <template name="exemplo_postagem">
   this.render('exemplo_postagem');
 });
+Router.route('testeddssdf', function () {
+  this.render('teste');
+});
