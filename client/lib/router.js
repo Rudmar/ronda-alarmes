@@ -10,3 +10,7 @@ Router.route('exemplo', function () {
 Router.route('/', function () {
   this.render('home');
 });
+Router.route('seguranca_para_empresas', function () {
+  // Aqui vai o nome do template do site, nome dado no parametro <template name="exemplo_postagem">
+  this.render('post1');
+});
