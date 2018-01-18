@@ -5,5 +5,6 @@ sitemaps.add('/sitemap.xml', function() {
     { page: '/home', lastmod: new Date().getTime(), changefreq: 'monthly', priority: 1.0 },
     // https://support.google.com/webmasters/answer/178636?hl=en
     { page: '/solucoes_Inteligentes', lastmod: new Date().getTime(), changefreq: 'monthly', priority: 0.8 },
+    { page: '/seguranca_para_empresas', lastmod: new Date().getTime(), changefreq: 'monthly', priority: 0.8 },
   ];
 });
