@@ -6,5 +6,6 @@ sitemaps.add('/sitemap.xml', function() {
     // https://support.google.com/webmasters/answer/178636?hl=en
     { page: '/solucoes_Inteligentes', lastmod: new Date().getTime(), changefreq: 'monthly', priority: 0.8 },
     { page: '/seguranca_para_empresas', lastmod: new Date().getTime(), changefreq: 'monthly', priority: 0.8 },
+    { page: '/principais_elementos_para_escolha_de_empresa_de_seguranca', lastmod: new Date().getTime(), changefreq: 'monthly', priority: 0.8 },
   ];
 });
