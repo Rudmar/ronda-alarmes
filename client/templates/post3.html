@@ -1,6 +1,21 @@
-<template name="home">
-  <head>
+<!-- Para criar uma nova postagem, deve seguir alguns passos básicos:
+PRIMEIRO: Copie o arquivo exemplo.html e cole a nova página dentro de templates, coloque o nome desejado
+SEGUNDO: Faça as alterações desejadas no corpo do site, não altere menu ou rodapé, só trabalhe com textos
+TERCEIRO: Para adicionar imagem a postagem, deve-se colocar a imagem na pasta public do projeto
+QUARTO: no arquivo router.js adicione um novo link com os nomes criados
+QUINTO: No ambiente git faça o commit das suas alterações ATENÇÂO **Adicionando somente o arquivo HTML criado
+e o router.js, nada mais deve ser adicionando**
+  Comandos para git: git status
+                     git add *arquivo criado*
+                     git add router.js
+                     git commit -m "Ubiki"
+                     git push origin master
+SEXTO: Faça deploy pelo Heroku
+-->
 
+
+<template name="post3">
+  <head>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112241308-1"></script>
     <script>
@@ -10,15 +25,6 @@
 
       gtag('config', 'UA-112241308-1');
     </script>
-
-    <meta charset="utf-8">
-    <meta name="google-site-verification" content="Usjv-a4-PpkQiD-jSAdKghw5-NROTzAZFMDkF_jv5Vo" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta property="og:url"                content="http://www.rondaalarmes.com.br/" />
-    <meta property="og:type"               content="article" />
-    <meta property="og:title"              content="Ronda Alarmes - Segurança Eletrônica" />
-    <meta property="og:description"        content="Segurança Eletrônica para Sua Proteção" />
-    <meta property="og:image"              content="https://i.imgur.com/6SzLM70.png" />
 
     <title>Ronda Alarmes</title>
 
@@ -44,7 +50,7 @@
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
       <div class="container">
-        <a class="navbar-brand js-scroll-trigger" href="#page-top"><img style="height: 90%; float: left;" src="img/rondaLogo.png" alt="Ronda Logo"></a>
+        <a class="navbar-brand js-scroll-trigger" href="http://www.rondaalarmes.com.br"><img style="height: 90%; float: left;" src="img/rondaLogo.png" alt="Ronda Logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse"
         data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
         aria-label="Toggle navigation">
@@ -54,10 +60,10 @@
         <div class="collapse navbar-collapse"  id="navbarResponsive">
           <ul class="navbar-nav text-uppercase ml-auto">
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#services">Serviços </a>
+              <a class="nav-link" href="http://www.rondaalarmes.com.br#services">Serviços </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link js-scroll-trigger" href="#portfolio">Soluções </a>
+              <a class="nav-link " href="#portfolio">Soluções </a>
             </li>
             <li class="nav-item">
               <div class="dropdown">
@@ -76,219 +82,82 @@
       </div>
     </nav>
 
-
-    <!-- Header -->
-    <header class="masthead">
-      <div class="container">
-        <div class="intro-text">
-          <div class="intro-heading" style="color: #f80000; text-shadow: 2px 0 0 #000, -2px 0 0 #000,
-          0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000,
-          -1px 1px 0 #000; text-transform: uppercase; font-size: 42px;">
-            <img style="padding-top: 0px; width: 25%;" src="img/RONDA.png" alt="Ronda Logo">
-            <br>Segurança<br>Eletrônica
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <!-- Services -->
-    <section id="services">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Nossos Serviços</h2>
-            <h2 style="font-weight: 400; font-style: italic;"
-            class="section-subheading">A <b>Ronda Alarmes</b> tem como missão
-              proporcionar aos clientes tranquilidade e qualidade de vida,
-              protegendo seus bens materiais e seus familiares.</h2>
-          </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <img style="border-radius: 50%; width:90%; height:90%; object-fit: contain;" src="img/concertina.jpg" alt="Concertina">
-            </span>
-            <h2 class="service-heading">Concertinas</h2>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <img style="border-radius: 50%; width:90%; height:90%; object-fit: contain;" src="img/cerca.jpg" alt="Cerca">
-            </span>
-            <h2 class="service-heading">Cercas Elétricas</h2>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <img style="border-radius: 50%; width:90%; height:90%; object-fit: contain;" src="img/rastreamento.jpg" alt="Rastreamento">
-            </span>
-            <h2 class="service-heading">Rastreamento Veícular (Fulltime)</h2>
-          </div>
-        </div>
-      </div>
-
-      <!-- Services 2 Column -->
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <img style="border-radius: 50%; width:90%; height:90%; object-fit: contain;" src="img/moni.jpg" alt="Portaria">
-            </span>
-            <h2 class="service-heading">Portaria Virtual ou Remota</h2>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <img style="border-radius: 50%; width:90%; height:90%; object-fit: contain;" src="img/seguranca.jpg" alt="Seguranca">
-            </span>
-            <h2 class="service-heading">Segurança Pública</h2>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <img style="border-radius: 50%; width:90%; height:90%; object-fit: contain;" src="img/alarmeMonitorado.png" alt="Alarme">
-            </span>
-            <h2 class="service-heading">Alarme Monitorado 24 Horas</h2>
-          </div>
-        </div>
-      </div>
-
-      <!-- Services 3 Column -->
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <img style="border-radius: 50%; width:90%; height:90%; object-fit: contain;" src="img/analogica.jpg" alt="Alarme">
-            </span>
-            <h2 class="service-heading">Cameras Analógicas em HD e IP</h2>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <img style="border-radius: 50%; width:90%; height:90%; object-fit: contain;" src="img/iphone.jpg" alt="Alarme">
-            </span>
-            <h2 class="service-heading">Imagem em Tempo Real</h2>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <img style="border-radius: 50%; width:90%; height:90%; object-fit: contain;" src="img/internet.jpg" alt="Alarme">
-            </span>
-            <h2 class="service-heading">Relatório de Abertura e Fechamento</h2>
-          </div>
-        </div>
-      </div>
-
-      <!-- Services 4 Column -->
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <img style="border-radius: 50%; width:90%; height:90%; object-fit: contain;" src="img/atendimento.jpg" alt="Alarme">
-            </span>
-            <h2 class="service-heading">Apoio Técnico</h2>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <img style="border-radius: 50%; width:90%; height:90%; object-fit: contain;" src="img/viaturas.jpg" alt="Alarme">
-            </span>
-            <h2 class="service-heading">Viaturas de Pronta Resposta</h2>
-          </div>
-          <div class="col-md-4">
-            <span class="fa-stack fa-4x">
-              <img style="border-radius: 50%; width:90%; height:90%; object-fit: contain;" src="img/painel.jpg" alt="Alarme">
-            </span>
-            <h2 class="service-heading">Monitoramente de Imagem via Rádio e Vídeo</h2>
-          </div>
-        </div>
-      </div>
-
-    </section>
-
-    <!-- Portfolio Grid -->
-    <section class="bg-light" id="portfolio">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-12 text-center">
-            <h2 class="section-heading text-uppercase">Soluções Inteligentes</h2>
-            <h3 class="section-subheading">Nossos produtos e serviços tem valores acessíveis e boas condições de pagamento,
-            trabalhamos com qualidade, garantia profissional e excelência no atendimento.</h3>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link js-scroll-trigger" href="porque_contratar_uma_empresa_de_seguranca">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/artigo3mini.jpeg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Por que contratar uma empresa de segurança?</h4>
-              <p class="text-muted">A importância das empresas de segurança
-                na saúde de seu negócio</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link js-scroll-trigger" href="principais_elementos_para_escolha_de_empresa_de_seguranca">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/artigo2mini.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Elementos a serem considerados na escolha de uma empresa de segurança</h4>
-              <p class="text-muted">Os principais pontos que devem ser analisados para escolher
-              a sua empresa de segurança.</p>
-            </div>
-          </div>
-          <div class="col-md-4 col-sm-6 portfolio-item">
-            <a class="portfolio-link js-scroll-trigger" href="seguranca_para_empresas">
-              <div class="portfolio-hover">
-                <div class="portfolio-hover-content">
-                  <i class="fa fa-plus fa-3x"></i>
-                </div>
-              </div>
-              <img class="img-fluid" src="img/artigo1mini.jpg" alt="">
-            </a>
-            <div class="portfolio-caption">
-              <h4>Segurança para empresas</h4>
-              <p class="text-muted">Soluções ideias para assegurar seu patrimônio.</p>
-            </div>
-          </div>
-        </div>
-        <nav aria-label="Page navigation">
-          <ul class="pagination navbar-right">
-            <li><a style="color: #e83e3e" href="postagens">Todas as postagens</a></li>
-          </ul>
-        </nav>
-      </div>
-    </section>
-
-    <!-- Clients -->
-    <h1 class="text-center">Parceiros e Certificados</h1>
-    <section class="py-5">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" style="width: 70%" src="img/logos/sec.jpeg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/abese.jpg" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img class="img-fluid d-block mx-auto" src="img/logos/siese.png" alt="">
-            </a>
-          </div>
-          <div class="col-md-3 col-sm-6">
-            <a href="#">
-              <img style="width: 65%" class="img-fluid d-block mx-auto" src="img/logos/crea2.jpg" alt="">
-            </a>
-          </div>
-        </div>
+    <section class="bg-light" id="post">
+    <div class="container" align="justify">
+            <!-- Título da postagem -->
+            <h2 class="section-heading text-uppercase"><center>Por que<br>contratar uma <br>empresa de<br>
+            segurança </center></h2>
+            <!-- Sub-título da postagem -->
+            <p class="item-intro text-muted"></p>
+            <!-- Imagem da postagem -->
+            <img class="img-fluid d-block mx-auto" style="width: 50%" src="img/artigo3.jpeg" alt="">
+            <!-- Se inicia parágrafos com <p> e se termina com </p> -->
+            <p>
+            <!-- Para quebrar linhas se utiliza <br> -->
+              <br>
+            </p>
+            <p>
+            <!-- Para deixar uma palavra em negrito se utiliza <b> ao final da palavra fechamos com </b> -->
+            Você finalmente consolidou aquilo que envisionava há muito, e agora tem seu próprio
+            empreendimento. Provavelmente, para conseguir essa conquista, investiu muito dinheiro
+            ali, não é mesmo? Você considerou contratar <b>empresas de segurança</b> para guardar seu
+            patrimônio? Se a resposta foi não, pode estar pondo tudo a perder.
+            </p>
+            <p>
+              <br>
+            </p>
+            <p>
+              <!-- Título de tópico -->
+              <h2><center>A importancia das empresas se segurança na saúde do seu negócio</center></h2>
+              A violência cresce exponencialmente no país. A desigualdade social faz com que as
+              pessoas almejem coisas que não têm, e, assim, dá abertura para aqueles com o
+              caráter mais fraco buscarem tomar dos outros ao invés de conquistar por si.
+              Assim, quando a oportunidade de um local desprotegido com itens de valor aparece à sua frente,
+              fica difícil garantir a integridade da moral. É como o ditado diz, “a oportunidade faz o ladrão”.
+              Ou seja, deixar seu negócio desprotegido, sem contratar <b>empresas de segurança</b>, é deixá-lo à mercê
+              de problemas mais sérios.
+              Se engana quem pensa que só sua residência precisa ser resguardada. De fato, a segurança
+              residencial é importante, mas empresas possuem uma diversidade de bens que geram lucros
+              extremos a quem os saqueia, e as pessoas sabem disso.
+              Da mesma forma, <b>empresas de segurança</b> que oferecem dispositivos eletrônicos, como câmeras,
+              podem auxiliar não apenas em casos de furto.
+              Isso porque, infelizmente, não é incomum se deparar também com casos de vandalismo, como
+              grafite, ou até mesmo depredagem em iniciativa privada.
+              Sem câmeras, você não pode identificar os culpados e acionar as autoridades.
+              <br><br>
+            </p>
+            <p>
+              <!-- Título de tópico -->
+              <h2><center>A vigilância inibe o crime</center></h2>
+              Com <b>empresas de segurança</b> em ação, saber que uma área é monitorada é
+              uma medida preventiva muito eficiente. Quando se sabe que está sendo
+              vigiado, monitorado, e pode ser facilmente identificado, a tendência
+              é que nenhum cidadão se sinta propenso a cometer qualquer tipo de crimes.
+              Dessa forma, <b>empresas de segurança</b> podem inibir desde invasões de propriedade a pequenos
+              furtos que podem acontecer mesmo quando o empreendimento ainda está em horário de
+              funcionamento.
+              Além disso, é com esse tipo de monitoramento que você é capaz de dar aos funcionários a
+              segurança que eles precisam.
+              Afinal de contas, quantos empreendimentos não apareceram já em noticiários, com seus
+              funcionários rendidos a mão armada? A maioria deles não contava com uma monitoria
+              adequada, já que a última coisa que um assaltante quer é seu rosto estampado nos
+              jornais após ser gravado por uma câmera de segurança.
+              Da mesma forma, controles de acesso a áreas restritas garantem o cuidado com o
+              estoque do local, e impedem invasões. Alarmes, por sua vez, permitem que as autoridades
+              sejam acionadas imediatamente, aumentando a probabilidade da resolução do problema.
+              Um ronda, ainda, é capaz de afugentar meliantes, e pedir apoio quando necessário, nunca
+              deixando o negócio desprotegido.
+              Sua empresa é seu patrimônio, e você com certeza não é o único que enxerga valor nela.
+              Investir na segurança daquilo que você demorou e investiu tanto para construir é
+              fundamental não apenas para manter sua integridade, mas para garantir a segurança
+              daqueles que dedicam de seu tempo e mão de obra para colaborar com seu negócio,
+              os seus funcionários. <br><br>
+            </p>
+            <!-- Data e categoria da postagem -->
+            <ul class="list-inline">
+              <li>Data de publicação: 30 de Janeiro de 2018</li>
+              <li>Categoria: Importância empresa de segurança</li>
+            </ul>
       </div>
     </section>
 
