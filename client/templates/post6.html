@@ -1,0 +1,227 @@
+<!-- Para criar uma nova postagem, deve seguir alguns passos básicos:
+PRIMEIRO: Copie o arquivo exemplo.html e cole a nova página dentro de templates, coloque o nome desejado
+SEGUNDO: Faça as alterações desejadas no corpo do site, não altere menu ou rodapé, só trabalhe com textos
+TERCEIRO: Para adicionar imagem a postagem, deve-se colocar a imagem na pasta public do projeto
+QUARTO: no arquivo router.js adicione um novo link com os nomes criados
+QUINTO: No ambiente git faça o commit das suas alterações ATENÇÂO **Adicionando somente o arquivo HTML criado
+e o router.js, nada mais deve ser adicionando**
+  Comandos para git: git status
+                     git add *arquivo criado*
+                     git add router.js
+                     git commit -m "Ubiki"
+                     git push origin master
+SEXTO: Faça deploy pelo Heroku
+-->
+
+
+<template name="post6">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112241308-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112241308-1');
+    </script>
+
+    <title>Ronda Alarmes</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="client/css/agency.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="http://www.rondaalarmes.com.br"><img style="height: 90%; float: left;" src="img/rondaLogo.png" alt="Ronda Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse"  id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="http://www.rondaalarmes.com.br#services">Serviços </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="http://www.rondaalarmes.com.br#portfolio">Soluções </a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <button class="dropbtn">Boletos/WebAlarmes</button>
+                <div class="dropdown-content">
+                  <a href="http://201.22.148.197:9596/portalservice">Boletos</a>
+                  <a href="http://www.webalarme.com.br">WebAlarmes</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contato </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="bg-light" id="post">
+    <div class="container" align="justify">
+            <!-- Título da postagem -->
+            <h2 class="section-heading text-uppercase"><center>Cuidado com <br>suas postagens</center></h2>
+            <!-- Sub-título da postagem -->
+            <p class="item-intro text-muted"></p>
+            <!-- Imagem da postagem -->
+            <img class="img-fluid d-block mx-auto" style="width: 50%" src="img/post6.jpeg" alt="">
+            <!-- Se inicia parágrafos com <p> e se termina com </p> -->
+            <p>
+            <!-- Para quebrar linhas se utiliza <br> -->
+              <br>
+            </p>
+            <p>
+            <!-- Para deixar uma palavra em negrito se utiliza <b> ao final da palavra fechamos com </b> -->
+            Cuidados que são essenciais para não expor demais a sua intimidade e colocar sua família em
+            situações de risco.
+            As redes sociais estão cada vez mais comuns e populares entre todas as idades. Hoje em dia
+            você tira uma foto, posta e marca o lugar e toda sua família. A princípio é uma maravilha.
+            Vai todo mundo ver o quanto vocês estão se divertindo, mas você deve <b>tomar cuidado com suas
+            postagens.</b><br>
+            Isso porque nem tudo o que a gente faz deve ser divulgado no Facebook, Instagram, Twitter,
+            ou em qualquer outra rede social. As redes sociais costumam ser abertas e ilimitadas.
+            Ou seja, todo mundo que solicitou sua amizade pode visualizar tudo o que você posta no seu perfil.<br>
+            Agora com os famosos snaps, disponíveis em diversas redes sociais, os pequenos vídeos ou
+            imagem do que você está fazendo naquele momento podem se tornar uma armadilha para você.
+            Por isso tenha muito <b>cuidado com suas postagens</b>.<br>
+            Devido ao imediatismo e a disponibilidade da localização é ainda mais fácil de ser achado
+            em um local real por meio de uma rede social. Por isso devemos ter atenção redobrada e
+            selecionar muito bem quando e o que postar nas redes sociais.<br>
+            </p>
+            <p>
+              <br>
+            </p>
+            <p>
+              <!-- Título de tópico -->
+              <h2><center>Cuidado com suas postagens e os pedidos de amizade nas redes sociais</center></h2>
+              <br>
+              Além de ter cuidado com suas postagens você deve também se atentar aos pedidos de amizade
+              que recebe e aceita. Afinal, nas redes sociais tudo começa pelo pedido de amizade.<br>
+              Todas as redes sociais oferecem a opções para configurar a privacidade, porém só isso não
+              adianta. As opções de privacidade oferecidas, geralmente funcionam para amigos e não amigos.
+              Ou seja, você seleciona se quer que suas informações sejam públicas ou privadas.<br>
+              Quando selecionamos a opção privada as nossas publicações aparecem apenas para a nossa rede
+              de contatos. E é aí que mora o perigo. Muitas vezes, por conta de números a mais, acabamos
+              aceitando pessoas desconhecidas ou pouco conhecidas nas redes sociais.<br>
+              Isso acontece por conta do aumento no número de seguidores ou até mesmo no número de likes
+              que vamos receber. Mas ao fazer isso você esquece do principal cuidado com suas postagens.
+              O cuidado de permitir que desconhecidos tenham acesso a informações do seu cotidiano.<br>
+              Por isso, selecione muito bem seus amigos nas redes sociais e nunca aceite os pedidos de
+              amizade feito por estranhos ou pessoas pouco conhecidas. Essa é a regra número um do bom
+              uso da rede social.
+              <br>
+              <br>
+              <h2><center>Dicas para usar as redes sociais de forma segura</center></h2>
+              <br>
+              Apesar de o crime virtual ter ficado um pouco mais difícil, por conta das configurações de rede e anti-vírus. Ainda assim existem alguns cuidados com suas postagens e acesso as redes sociais, além dos já citados, que devemos tomar, confira nossas dicas:
+              <br><br>
+              <b>1. Cuidado com os links:</b><br>
+              As redes sociais costumam estar sempre ligadas a alguns links, e eles podem te levar para lugares perigosos. Procure sempre clicar em links que você confia, para que não caia na armadilha de hackers. Os perigos vão desde um vírus até o roubo de informações.
+              <br><br><b>2. Redobre a segurança de acesso:</b><br>
+              Sempre que possível, lembre-se de ativar a opção de verificação de segurança para logins nas redes sócias. O Facebook, por exemplo, disponibiliza uma opção de login que precisa ser verificado do seu aparelho celular.
+              <br>
+              Assim, mesmo com sua senha, para ter acesso as suas informações da rede social o hacker precisará ter acesso ao seu celular. Isso torna o golpe, quase que impossível.
+              <br><br>
+              <b>3. Escolha uma boa senha:</b>
+              <br>
+              As senhas devem seguir sempre o nível de segurança e as exigências da rede social. Intercalar letras maiúsculas e minúsculas pode aumentar o nível de segurança da senha.
+              <br>Por isso tente sempre inserir números e letras maiúsculas e minúsculas em suas senhas. E lembre-se de evitar que sejam todas iguais.
+              <br><br>
+              <b>Fontes:</b>
+              <link rel="stylesheet" href="/css/master.css">
+              Veja 5 dicas para usar redes sociais com segurança -
+              <a href="http://g1.globo.com/tecnologia/blog/seguranca-digital/post/veja-5-dicas-para-usar-redes-sociais-com-seguranca.html">http://g1.globo.com/tecnologia/blog/seguranca-digital/post/veja-5-dicas-para-usar-redes-sociais-com-seguranca.html</a>
+              <br>
+              <br>
+              <link rel="stylesheet" href="/css/master.css">
+              10 dicas de segurança para as redes sociais - <a href="http://www.mundopositivo.com.br/noticias/segurancadigital/20341623-10_dicas_de_seguran%C3%A7a_para_as_redes_sociais.html">http://www.mundopositivo.com.br/noticias/segurancadigital/20341623-10_dicas_de_seguran%C3%A7a_para_as_redes_sociais.html</a>
+            </p>
+            <!-- Data e categoria da postagem -->
+            <ul class="list-inline">
+              <li>Data de publicação: 6 de Março de 2018</li>
+              <li>Categoria: Segurança em redes sociais</li>
+            </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      {{> email}}
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container" style="font-weight: 900;">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">QNF 24, Lote 36 - Taguatinga<br>Brasília - DF<br>CEP: 72125-740</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <span class="copyright">(61) 3034-3598<br>comercial@rondaalarmes.com.br</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="client/vendor/jquery/jquery.min.js"></script>
+    <script src="client/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="client/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="client/js/jqBootstrapValidation.js"></script>
+    <script src="client/js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="client/js/agency.min.js"></script>
+    <script src="client/js/script.js"></script>
+
+  </body>
+
+</template>

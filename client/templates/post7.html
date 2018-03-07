@@ -1,0 +1,217 @@
+<!-- Para criar uma nova postagem, deve seguir alguns passos básicos:
+PRIMEIRO: Copie o arquivo exemplo.html e cole a nova página dentro de templates, coloque o nome desejado
+SEGUNDO: Faça as alterações desejadas no corpo do site, não altere menu ou rodapé, só trabalhe com textos
+TERCEIRO: Para adicionar imagem a postagem, deve-se colocar a imagem na pasta public do projeto
+QUARTO: no arquivo router.js adicione um novo link com os nomes criados
+QUINTO: No ambiente git faça o commit das suas alterações ATENÇÂO **Adicionando somente o arquivo HTML criado
+e o router.js, nada mais deve ser adicionando**
+  Comandos para git: git status
+                     git add *arquivo criado*
+                     git add router.js
+                     git commit -m "Ubiki"
+                     git push origin master
+SEXTO: Faça deploy pelo Heroku
+-->
+
+
+<template name="post7">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112241308-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112241308-1');
+    </script>
+
+    <title>Ronda Alarmes</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="client/css/agency.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="http://www.rondaalarmes.com.br"><img style="height: 90%; float: left;" src="img/rondaLogo.png" alt="Ronda Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse"  id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="http://www.rondaalarmes.com.br#services">Serviços </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="http://www.rondaalarmes.com.br#portfolio">Soluções </a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <button class="dropbtn">Boletos/WebAlarmes</button>
+                <div class="dropdown-content">
+                  <a href="http://201.22.148.197:9596/portalservice">Boletos</a>
+                  <a href="http://www.webalarme.com.br">WebAlarmes</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contato </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="bg-light" id="post">
+    <div class="container" align="justify">
+            <!-- Título da postagem -->
+            <h2 class="section-heading text-uppercase"><center>Segurança para<br>condomínios</center></h2>
+            <!-- Sub-título da postagem -->
+            <p class="item-intro text-muted"></p>
+            <!-- Imagem da postagem -->
+            <img class="img-fluid d-block mx-auto" style="width: 50%" src="img/post8.jpeg" alt="">
+            <!-- Se inicia parágrafos com <p> e se termina com </p> -->
+            <p>
+            <!-- Para quebrar linhas se utiliza <br> -->
+              <br>
+            </p>
+            <p>
+            <!-- Para deixar uma palavra em negrito se utiliza <b> ao final da palavra fechamos com </b> -->
+            A segurança para seu condomínio é hoje um item de primeira qualidade, que devemos investir
+            sempre que possível. Pois ao tratar com formas de prevenção estaremos evitando muitos problemas
+            e protegendo a nossa vida.
+            </p>
+            <p>
+              <br>
+            </p>
+            <p>
+              <!-- Título de tópico -->
+              <h2><center>Como ter mais segurança para seu condomínio</center></h2>
+              <br>
+              Para ter mais <b>segurança para seu condomínio</b> devemos investir em prevenção e nada mais
+              útil neste caso é proteger seu condomínio com um bom alarme e equipe de vigilância vinte
+              e quatro horas.<br>
+              Um condomínio seguro é um local onde os moradores sabem quem entra e sai do condomínio e
+              que a entrada de pessoas que não são moradores é bem monitorada, a fim de que não entrem
+              suspeitos.<br>
+              Para ter mais <b>segurança para seu condomínio</b>, é necessário que se tenha um controle de acesso
+              seguro, que se controle a entrada de veículos e que se possa identificar todas as pessoas que
+              circulam pelas dependências do prédio.
+              Então é um bom investimento ter instalado no seu prédio câmeras de vigilância e que seus dados
+              sejam gravados e guardados para posterior averiguação.<br>
+              Sempre que acontecem imprevistos, acontecem também algumas falhas de segurança que, se tivessem
+              sido corrigidas, talvez não tivesse ocorrido tal fato desagradável. É nesta hora que muitas vezes,
+              as pessoas decidem investir mais em segurança, quando já é tarde demais e já aconteceu um assalto
+              ou coisa pior.<br>
+              Aí os condomínios resolvem fechar mais suas portas e controlar o acesso ao prédio. Isso também
+              é válido, claro, mas o melhor de tudo é poder prevenir essas situações.<br>
+              Para ter mais <b>segurança para seu condomínio</b> então, é preciso que se invista na prevenção e
+              segurança do prédio, onde os moradores circulam e até mesmo no seu entorno, se for possível.<br>
+              Muitas casas e prédios possuem zeladores que observam as ruas a fim de encontrar pessoas suspeitas,
+              e muitos ainda possuem forte segurança interna, como um complemento ideal para evitar futuros
+              imprevistos.
+              <br>
+              <br>
+              <h2><center>Conte com um serviço especializado</center></h2>
+              <br>
+              Tenha sempre à mão os telefones de empresas que zelam pela segurança e contate alguém
+              para que faça a segurança de seu condomínio de forma planejada e organizada, para que
+              todos possam se sentir mais seguros e possam viver em paz dentro de seu espaço de domicílio.<br>
+              Assim que contratar os profissionais que podem fazer a segurança para seu condomínio,
+              você poderá ficar mais tranquilo, pois os arredores do prédio e seu interior estarão
+              resguardados de intrusos e pessoas que podem querer entrar para bisbilhotar a fim de
+              obter informações sobre seus moradores.<br>
+              Ao ter mais segurança dentro do condomínio é muito mais complicado alguém entrar se
+              passando por outra pessoa ou um visitante que na realidade não existe, portanto é um
+              ótimo investimento em qualidade de vida quando se resolve apostar mais em um ambiente
+              seguro para todos.<br>
+              Dessa forma, teremos mais tranquilidade para sair de casa e retornar com o carro, por
+              exemplo, e sabemos que as pessoas que entram no prédio pelo menos podem ser identificadas
+              e o acesso ao local fica muito mais restrito do que num local comum.
+              <br>
+              <br>
+            </p>
+            <!-- Data e categoria da postagem -->
+            <ul class="list-inline">
+              <li>Data de publicação: 6 de Março de 2018</li>
+              <li>Categoria: Segurança para condimínio</li>
+            </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      {{> email}}
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container" style="font-weight: 900;">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">QNF 24, Lote 36 - Taguatinga<br>Brasília - DF<br>CEP: 72125-740</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <span class="copyright">(61) 3034-3598<br>comercial@rondaalarmes.com.br</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="client/vendor/jquery/jquery.min.js"></script>
+    <script src="client/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="client/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="client/js/jqBootstrapValidation.js"></script>
+    <script src="client/js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="client/js/agency.min.js"></script>
+    <script src="client/js/script.js"></script>
+
+  </body>
+
+</template>

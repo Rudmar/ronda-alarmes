@@ -22,6 +22,22 @@ Router.route('proteja_seu_imovel_enquanto_viaja', function () {
   // Aqui vai o nome do template do site, nome dado no parametro <template name="exemplo_postagem">
   this.render('post4');
 });
+Router.route('seguranca_para_residencia', function () {
+  // Aqui vai o nome do template do site, nome dado no parametro <template name="exemplo_postagem">
+  this.render('post5');
+});
+Router.route('cuidado_com_suas_postagens', function () {
+  // Aqui vai o nome do template do site, nome dado no parametro <template name="exemplo_postagem">
+  this.render('post6');
+});
+Router.route('seguranca_para_condominio', function () {
+  // Aqui vai o nome do template do site, nome dado no parametro <template name="exemplo_postagem">
+  this.render('post7');
+});
+Router.route('como_agir_durante_um_assalto', function () {
+  // Aqui vai o nome do template do site, nome dado no parametro <template name="exemplo_postagem">
+  this.render('post8');
+});
 Router.route('postagens', function () {
   // Aqui vai o nome do template do site, nome dado no parametro <template name="exemplo_postagem">
   this.render('todos_posts');

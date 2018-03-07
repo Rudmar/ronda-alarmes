@@ -1,0 +1,216 @@
+<!-- Para criar uma nova postagem, deve seguir alguns passos básicos:
+PRIMEIRO: Copie o arquivo exemplo.html e cole a nova página dentro de templates, coloque o nome desejado
+SEGUNDO: Faça as alterações desejadas no corpo do site, não altere menu ou rodapé, só trabalhe com textos
+TERCEIRO: Para adicionar imagem a postagem, deve-se colocar a imagem na pasta public do projeto
+QUARTO: no arquivo router.js adicione um novo link com os nomes criados
+QUINTO: No ambiente git faça o commit das suas alterações ATENÇÂO **Adicionando somente o arquivo HTML criado
+e o router.js, nada mais deve ser adicionando**
+  Comandos para git: git status
+                     git add *arquivo criado*
+                     git add router.js
+                     git commit -m "Ubiki"
+                     git push origin master
+SEXTO: Faça deploy pelo Heroku
+-->
+
+
+<template name="post5">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112241308-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112241308-1');
+    </script>
+
+    <title>Ronda Alarmes</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="client/css/agency.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="http://www.rondaalarmes.com.br"><img style="height: 90%; float: left;" src="img/rondaLogo.png" alt="Ronda Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse"  id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="http://www.rondaalarmes.com.br#services">Serviços </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="http://www.rondaalarmes.com.br#portfolio">Soluções </a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <button class="dropbtn">Boletos/WebAlarmes</button>
+                <div class="dropdown-content">
+                  <a href="http://201.22.148.197:9596/portalservice">Boletos</a>
+                  <a href="http://www.webalarme.com.br">WebAlarmes</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contato </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="bg-light" id="post">
+    <div class="container" align="justify">
+            <!-- Título da postagem -->
+            <h2 class="section-heading text-uppercase"><center>Segurança para<br>sua residência</center></h2>
+            <!-- Sub-título da postagem -->
+            <p class="item-intro text-muted"></p>
+            <!-- Imagem da postagem -->
+            <img class="img-fluid d-block mx-auto" style="width: 50%" src="img/post5.jpeg" alt="">
+            <!-- Se inicia parágrafos com <p> e se termina com </p> -->
+            <p>
+            <!-- Para quebrar linhas se utiliza <br> -->
+              <br>
+            </p>
+            <p>
+            <!-- Para deixar uma palavra em negrito se utiliza <b> ao final da palavra fechamos com </b> -->
+            Sua casa é sua fortaleza, e não existe nada mais aconchegante nem seguro que estar no seu lar.
+            Mas será que a sensação de segurança é real? Você tem <b>sistemas de segurança</b> eficientes
+            no aconchego do seu lar? Se não tem, está na hora de ter.<br>
+            Cresce cada vez mais os assaltos e furtos a casas e condomínios. Os números, que chegam a 172%
+            a mais que o ano de 2015, estão assustando os brasileiros. O local, antes tido como seguro agora
+            também corre riscos e precisa de proteção.<br>
+            Isso acontece porque, muitas vezes, o bandido está habituado e ligado na sua rotina
+            ou na rotina do seu condomínio. Por isso, geralmente as casas são invadidas em um momento de
+            fragilidade, quando não tem ninguém em casa ou quando há troca de turnos nos condomínios.<br>
+            Devido à criminalidade, as empresas que oferecem serviços de <b>sistemas de segurança</b>
+            estão sendo cada vez mais procuradas. A Ronda Alarmes disponibiliza diversos serviços
+            de <b>sistemas de segurança</b> que visam a tranquilidade, a proteção e a qualidade de
+            vida de toda sua família.
+            </p>
+            <p>
+              <br>
+            </p>
+            <p>
+              <!-- Título de tópico -->
+              <h2><center>Serviços de sistemas de segurança Ronda Alarmes</center></h2>
+              <br>
+              Nossos <b>sistemas de segurança</b> vão desde as famosas concertinas até o monitoramento
+              de imagem via rádio e vídeo. Vamos explicar melhor cada um deles:<br>
+              Concertinas e cercas elétricas: Essas opções costumam ser mais econômicas e eficazes.
+              Ambas são instaladas em cima do muro, uma gera uma carga elétrica quando algo encosta
+              a cerca e a outra faz cortes, por conta das farpas do arame.<br>
+              Portaria virtual ou remota: Essa é uma boa opção para casas e condomínios pequenos,
+              com esse sistema é possível economizar e elevar o nível de segurança. Funciona como
+              uma portaria normal, mas você é o seu porteiro, ela é aberta e liberada somente pelos
+              cadastrados no sistema.<br>
+              Alarme monitorado 24 horas: esse é o alarme que todo mundo já conhece. Sempre que alguém
+              força a abertura ou entra sem desativar o alarme soa um barulho e um sinal de alarme é
+              emitido imediatamente para nossa central.<br>
+              Câmeras analógicas em HD e IP e imagem em tempo real: As câmeras disponibilizam gravação
+              de imagens e também acompanhamento das mesmas através de um monitor interno.
+              Já a imagem em tempo real, tem a mesma função, porém funciona a distância por meio de
+              aparelhos como o smartphone.<br>
+              Monitoramento de imagens via rádio e vídeo: você pode também escolher o serviço de monitoramento.
+              Neste <b>sistema de segurança</b> nós da ronda alarme estaremos 24 horas analisando as imagens em uma
+              sala de monitoramento.<br>
+              A Ronda Alarmes conta com uma frota de viaturas sempre preparada e pronta para qualquer chamado.<br>
+              Agora que você já sabe como manter sua casa realmente aconchegante e segura para seus
+              familiares, não perca tempo. Torne sua residência em um verdadeiro lar.<br>
+              Contrate agora um dos <b>sistemas de segurança</b> da Ronda Alarmes para sua residência e fique
+              tranquilo e protegido com a segurança e o bem-estar de todos os que seus familiares.
+              <br>
+              <br>
+              <b>Fontes:</b>
+              <link rel="stylesheet" href="/css/master.css">
+              Roubos e furtos a condomínios crescem 172% em São Paulo, aponta levantamento -
+              <a href="https://g1.globo.com/sao-paulo/noticia/roubos-e-furtos-a-residencias-crescem-172-em-sao-paulo-aponta-levantamento.ghtml">https://g1.globo.com/sao-paulo/noticia/roubos-e-furtos-a-residencias-crescem-172-em-sao-paulo-aponta-levantamento.ghtml</a>
+              <br><br>
+            </p>
+            <!-- Data e categoria da postagem -->
+            <ul class="list-inline">
+              <li>Data de publicação: 6 de Março de 2018</li>
+              <li>Categoria: Segurança de imóveis</li>
+            </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      {{> email}}
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container" style="font-weight: 900;">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">QNF 24, Lote 36 - Taguatinga<br>Brasília - DF<br>CEP: 72125-740</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <span class="copyright">(61) 3034-3598<br>comercial@rondaalarmes.com.br</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="client/vendor/jquery/jquery.min.js"></script>
+    <script src="client/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="client/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="client/js/jqBootstrapValidation.js"></script>
+    <script src="client/js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="client/js/agency.min.js"></script>
+    <script src="client/js/script.js"></script>
+
+  </body>
+
+</template>
