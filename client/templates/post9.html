@@ -1,0 +1,215 @@
+<!-- Para criar uma nova postagem, deve seguir alguns passos básicos:
+PRIMEIRO: Copie o arquivo exemplo.html e cole a nova página dentro de templates, coloque o nome desejado
+SEGUNDO: Faça as alterações desejadas no corpo do site, não altere menu ou rodapé, só trabalhe com textos
+TERCEIRO: Para adicionar imagem a postagem, deve-se colocar a imagem na pasta public do projeto
+QUARTO: no arquivo router.js adicione um novo link com os nomes criados
+QUINTO: No ambiente git faça o commit das suas alterações ATENÇÂO **Adicionando somente o arquivo HTML criado
+e o router.js, nada mais deve ser adicionando**
+  Comandos para git: git status
+                     git add *arquivo criado*
+                     git add router.js
+                     git commit -m "Ubiki"
+                     git push origin master
+SEXTO: Faça deploy pelo Heroku
+-->
+
+
+<template name="post9">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112241308-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112241308-1');
+    </script>
+
+    <title>Ronda Alarmes</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="client/css/agency.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="http://www.rondaalarmes.com.br"><img style="height: 90%; float: left;" src="img/rondaLogo.png" alt="Ronda Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse"  id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="http://www.rondaalarmes.com.br#services">Serviços </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="http://www.rondaalarmes.com.br#portfolio">Soluções </a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <button class="dropbtn">Boletos/WebAlarmes</button>
+                <div class="dropdown-content">
+                  <a href="http://201.22.148.197:9596/portalservice">Boletos</a>
+                  <a href="http://www.webalarme.com.br">WebAlarmes</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contato </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="bg-light" id="post">
+    <div class="container" align="justify">
+            <!-- Título da postagem -->
+            <h2 class="section-heading text-uppercase"><center>Por que investir<br>em controle de acesso</center></h2>
+            <!-- Sub-título da postagem -->
+            <p class="item-intro text-muted"></p>
+            <!-- Imagem da postagem -->
+            <img class="img-fluid d-block mx-auto" style="width: 50%" src="img/post9.jpeg" alt="">
+            <!-- Se inicia parágrafos com <p> e se termina com </p> -->
+            <p>
+            <!-- Para quebrar linhas se utiliza <br> -->
+              <br>
+            </p>
+            <p>
+            <!-- Para deixar uma palavra em negrito se utiliza <b> ao final da palavra fechamos com </b> -->
+            O investimento em segurança é sempre o melhor negócio. Cada vez que investimos em algo que
+            nos deixe mais seguros estamos cuidando de algo que jamais poderemos recuperar, nossa
+            segurança e qualidade de vida.
+            </p>
+            <p>
+              <br>
+            </p>
+            <p>
+              <!-- Título de tópico -->
+              <h2><center>Por que investir em controle de acesso?</center></h2>
+              <br>
+              Quanto mais seguro um lugar, melhor controle de acesso ele tem. É através do acesso aos
+              condomínios que sabemos quem entra e quem sai de um lugar. E muito dos roubos e outros
+              incidentes acontecem pois a entrada está livre e as pessoas acabam entrando e coletando
+              informações sobre os moradores.<br>
+              Através de um melhor controle do acesso à residência, você pode saber exatamente quem
+              está passando pela entrada do edifício ou pátio, e mantém sua casa mais segura, livre
+              de invasores e outras coisas indesejadas.<br>
+              Hoje, cada vez mais se investe em segurança, pois já não dá mais para contar com a sorte
+              ou com a proteção apenas do Estado. Infelizmente, não temos como confiar que estaremos
+              seguros o tempo inteiro, por isso é fundamental cuidar de nossos espaços pessoais.<br>
+              Não caia no erro de deixar sua casa desprotegida, cuide sempre da entrada e saída de
+              veículos e invista em um bom controle de acesso, assim sua casa ficará muito mais segura.<br>
+              Não temos como reparar um dano depois que ele acontece, e, se pudermos fazer isso, é muito
+              mais difícil e doloroso, o melhor que temos a fazer é prevenir sempre.<br>
+              Investir em um bom controle de acesso te dá a garantia de mais segurança e monitoramento
+              de sua casa ou estabelecimento. Assim, você vive mais tranquilo e sem aquele medo de que
+              algo pode acontecer. Pois, com maior controle, melhor fica sua segurança e sua casa fica
+              mais protegida.<br>
+              É comum invasores entrarem nas casas através da porta de entrada, se passando por pessoas
+              comuns ou técnicos de alguma empresa. Se você investe em um controle de acesso, ficará muito
+              mais fácil identificar as pessoas e você mesmo fica mais atento ao que pode acontecer.<br>
+              Hoje em dia, é fundamental investir em segurança, mesmo vivendo longe das cidades, nas praias,
+              no campo e nos centros urbanos a segurança está cada vez mais em perigo. E devemos proteger
+              nossa casa, família e filhos. Somente com uma proteção efetiva poderemos viver mais tranquilos
+              e felizes.
+              <br>
+              <br>
+              <h2><center>A importância do controle de acesso</center></h2>
+              <br>
+              Invista em um controle de acesso para sua residência. Se você mora em condomínio essa
+              atitude se torna ainda mais necessária, pois é comum a entrada de muitas pessoas durante
+              o dia e noite, e entre elas sempre pode haver oportunistas e pessoas mal intencionadas.<br>
+              Com o controle de acesso, ninguém passa se não houver autorização e controle. Por isso,
+              é muito importante ter isso em casa, assim se trabalha com mais tranquilidade e se tem mais
+              qualidade de vida.<br>
+              Se você tem uma loja, mais um motivo terá para investir em um controle de acesso, sabendo
+              quem entra e sai de seu estabelecimento e tomando medidas de segurança para proteger seu
+              patrimônio e  trabalho.<br>
+              <br>
+              <br>
+            </p>
+            <!-- Data e categoria da postagem -->
+            <ul class="list-inline">
+              <li>Data de publicação: 13 de Março de 2018</li>
+              <li>Categoria: Controle de acesso</li>
+            </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      {{> email}}
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container" style="font-weight: 900;">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">QNF 24, Lote 36 - Taguatinga<br>Brasília - DF<br>CEP: 72125-740</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <span class="copyright">(61) 3034-3598<br>comercial@rondaalarmes.com.br</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="client/vendor/jquery/jquery.min.js"></script>
+    <script src="client/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="client/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="client/js/jqBootstrapValidation.js"></script>
+    <script src="client/js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="client/js/agency.min.js"></script>
+    <script src="client/js/script.js"></script>
+
+  </body>
+
+</template>
