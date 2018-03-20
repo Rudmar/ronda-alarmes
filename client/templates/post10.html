@@ -1,0 +1,216 @@
+<!-- Para criar uma nova postagem, deve seguir alguns passos básicos:
+PRIMEIRO: Copie o arquivo exemplo.html e cole a nova página dentro de templates, coloque o nome desejado
+SEGUNDO: Faça as alterações desejadas no corpo do site, não altere menu ou rodapé, só trabalhe com textos
+TERCEIRO: Para adicionar imagem a postagem, deve-se colocar a imagem na pasta public do projeto
+QUARTO: no arquivo router.js adicione um novo link com os nomes criados
+QUINTO: No ambiente git faça o commit das suas alterações ATENÇÂO **Adicionando somente o arquivo HTML criado
+e o router.js, nada mais deve ser adicionando**
+  Comandos para git: git status
+                     git add *arquivo criado*
+                     git add router.js
+                     git commit -m "Ubiki"
+                     git push origin master
+SEXTO: Faça deploy pelo Heroku
+-->
+
+
+<template name="post10">
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-112241308-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-112241308-1');
+    </script>
+
+    <title>Ronda Alarmes</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Monda" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="client/css/agency.min.css" rel="stylesheet">
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="http://www.rondaalarmes.com.br"><img style="height: 90%; float: left;" src="img/rondaLogo.png" alt="Ronda Logo"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false"
+        aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse"  id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="http://www.rondaalarmes.com.br#services">Serviços </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link " href="http://www.rondaalarmes.com.br#portfolio">Soluções </a>
+            </li>
+            <li class="nav-item">
+              <div class="dropdown">
+                <button class="dropbtn">Boletos/WebAlarmes</button>
+                <div class="dropdown-content">
+                  <a href="http://201.22.148.197:9596/portalservice">Boletos</a>
+                  <a href="http://www.webalarme.com.br">WebAlarmes</a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contato </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="bg-light" id="post">
+    <div class="container" align="justify">
+            <!-- Título da postagem -->
+            <h2 class="section-heading text-uppercase"><center>Como evitar o falso<br>disparo do alarme</center></h2>
+            <!-- Sub-título da postagem -->
+            <p class="item-intro text-muted"></p>
+            <!-- Imagem da postagem -->
+            <img class="img-fluid d-block mx-auto" style="width: 50%" src="img/post10.jpeg" alt="">
+            <!-- Se inicia parágrafos com <p> e se termina com </p> -->
+            <p>
+            <!-- Para quebrar linhas se utiliza <br> -->
+              <br>
+            </p>
+            <p>
+            <!-- Para deixar uma palavra em negrito se utiliza <b> ao final da palavra fechamos com </b> -->
+            Para ter mais segurança em uma residência, área de trabalho ou casa de praia ou campo, nada
+            melhor do que a instalação de um alarme. Mas se o alarme soa sozinho, vai gerar um
+            incômodo pelo ruído e uma chamada inútil ao centro de controle de segurança.
+            </p>
+            <p>
+              <br>
+            </p>
+            <p>
+              <!-- Título de tópico -->
+              <h2><center>Como evitar o falso disparo do alarme</center></h2>
+              <br>
+              Por isso é importante <b>evitar o falso disparo de alarme</b>. Para que você não tenha sustos e
+              imprevistos e também para que ele funcione corretamente, é preciso tomar algumas
+              precauções.<br>
+              Quando for instalar seu alarme, certifique-se de que saiba exatamente como fazer para
+              acioná-lo, e deixe isso muito claro aos outros moradores da casa. Ao sair para viajar, para
+              trabalhar ou quando precisar se ausentar por algum tempo, procure ativar o alarme e confira
+              se todas as portas e janelas estão bem fechadas.<br>
+              Não deixe correntes de ar atrapalharem o funcionamento de seu alarme. Muitas vezes o
+              alarme soa por uma simples entrada de vento na residência e isso pode ser evitado fechando-
+              se muito bem as janelas e portas.<br>
+              O alarme pode soar sozinho quando acontece temporais de alto impacto, quanto a isso, não
+              há muito o que fazer, mas a dica é que se feche sempre todos os vidros das janelas e instale o
+              alarme em um ponto onde fique isento de ser atingido por ruídos externos que podem fazer
+              com que ele dispare acidentalmente.<br>
+              Se ele disparar acidentalmente, você pode desligar sua atividade se estiver em casa, se não
+              estiver em casa, o serviço de segurança fará isso por você com toda a eficácia possível.
+              Mas procure ativar o alarme somente quando for sair de casa. Evite também a circulação de
+              animais de estimação dentro do local onde está instalado o alarme.<br>
+              Qualquer movimento pode acionar o alarme e se não for por uma razão de interesse, não tem
+              por que ele ser acionado acidentalmente, causando ruído e despesa por parte da
+              movimentação das entidades de segurança.<br>
+              Para manter-se seguro, procure por empresas que sejam de confiança e lhe ensinem como
+              manusear o alarme, para que tudo seja bem feito e não aconteçam erros que podem fazer
+              com que ele seja disparado sem querer.
+              <br>
+              <br>
+              <h2><center>Se atente ao local de instalação do alarme</center></h2>
+              <br>
+              Procure um local da casa onde não vá entrar rajadas de ventos e onde
+              não haverá circulação de animais e pessoas no momento em que ele for
+              ativado. Um alarme, quando é acionado, causa um ruído muito alto,
+              justamente para colocar em alerta vizinhos e entidades de segurança,
+              mas ele deve ser acionado somente em caso de necessidade e não por acidente.<br>
+              Dessa forma, instalando o alarme corretamente e cuidando para que fique
+              bem posicionado e em local isento de interrupções, você terá a certeza
+              de que seu alarme irá funcionar sempre que necessário e cuidará da segurança
+              de sua casa, estabelecimento ou casa de campo ou praia.<br>
+              Conte sempre com a ajuda dos sistemas de segurança que lhe informarão como
+              agir em caso de pequenos incidentes, auxiliando na sua total segurança.
+              <br>
+              <br>
+            </p>
+            <!-- Data e categoria da postagem -->
+            <ul class="list-inline">
+              <li>Data de publicação: 20 de Março de 2018</li>
+              <li>Categoria: Controle de acesso</li>
+            </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      {{> email}}
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container" style="font-weight: 900;">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">QNF 24, Lote 36 - Taguatinga<br>Brasília - DF<br>CEP: 72125-740</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <span class="copyright">(61) 3034-3598<br>comercial@rondaalarmes.com.br</span>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="client/vendor/jquery/jquery.min.js"></script>
+    <script src="client/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="client/vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="client/js/jqBootstrapValidation.js"></script>
+    <script src="client/js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="client/js/agency.min.js"></script>
+    <script src="client/js/script.js"></script>
+
+  </body>
+
+</template>

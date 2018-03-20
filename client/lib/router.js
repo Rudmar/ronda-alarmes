@@ -42,6 +42,10 @@ Router.route('por_que_contratar_controle_de_acesso', function () {
   // Aqui vai o nome do template do site, nome dado no parametro <template name="exemplo_postagem">
   this.render('post9');
 });
+Router.route('como_evitar_falso_alarme', function () {
+  // Aqui vai o nome do template do site, nome dado no parametro <template name="exemplo_postagem">
+  this.render('post10');
+});
 Router.route('postagens', function () {
   // Aqui vai o nome do template do site, nome dado no parametro <template name="exemplo_postagem">
   this.render('todos_posts');
