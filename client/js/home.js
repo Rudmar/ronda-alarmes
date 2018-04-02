@@ -9,8 +9,13 @@ Template.email.events({
     var name = template.find('#name').value;
     var subj = template.find('#phone').value;
     var body = template.find('#message').value + '\n\n' + 'Telefone do contato: ' + template.find('#phone').value;
-    Meteor.call('sendEmail', 'comercial@rondaalarmes.com.br', toAddr, name, body)
-    console.log('Email');
+    if (subj == '') {
+      alert("O campo telefone não pode estar em branco");
+      console.log("Campo de telefone em branco");
+    }
+    else {
+      Meteor.call('sendEmail', 'comercial@rondaalarmes.com.br', toAddr, name, body);
+    };
     template.find('#name').value = '';
     template.find('#email').value = '';
     template.find('#phone').value = '';
